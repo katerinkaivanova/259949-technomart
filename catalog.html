@@ -102,35 +102,49 @@
 	      				
 	      				<input type="range" min="0" max="30000" value="" id="price">
 	      				<label for="price">Цена</label>
+                
+                <input type="text" name="min-price">
+                <input type="text" name="max-price">
 	      			</div>
 
 	      			<div class="column-left-brand">
 	      				<h2 class="price-title">Производители:</h2>
-
-			            <input type="checkbox" name="bosch" id="bosch-field" checked>
-			            <label for="bosch-field">Bosch</label>      	
-
-			            <input type="checkbox" name="interskol" id="interskol-field">
-			            <label for="interskol-field">Интерскол</label>
-
-			            <input type="checkbox" name="makita" id="makita-field"checked>
-			            <label for="makita-field">Makita</label>
-
-			            <input type="checkbox" name="dewalt" id="dewalt-field">
-			            <label for="dewalt-field">Dewalt</label>
-
-			            <input type="checkbox" name="hitachi" id="hitachi-field">
-			            <label for="hitachi-field">Hitachi</label>
+                <ul class="brand-list">
+                  <li>
+                    <input type="checkbox" name="bosch" id="bosch-field" checked>
+                    <label for="bosch-field">Bosch</label>      	
+                  </li>
+                  <li>
+                    <input type="checkbox" name="interskol" id="interskol-field">
+                    <label for="interskol-field">Интерскол</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="makita" id="makita-field"checked>
+                    <label for="makita-field">Makita</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="dewalt" id="dewalt-field">
+                    <label for="dewalt-field">Dewalt</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="hitachi" id="hitachi-field">
+                    <label for="hitachi-field">Hitachi</label>
+                  </li>
+                </ul>    
 	      			</div>
 
 	      			<div class="column-left-power-supply">
 	      				<h2 class="power-supply-title">Питание:</h2>
-
-            			<input type="radio" name="power-supply" id="storage-battery" value="storage-battery" checked>
-            			<label for="storage-battery">Аккумуляторные</label>   
-
-            			<input type="radio" name="power-supply" id="ac-adapter" value="ac-adapter">
-            			<label for="ac-adapter">Сетевые</label>               	      				
+                <ul class="power-supply-list">
+                  <li>
+            			  <input type="radio" name="power-supply" id="storage-battery" value="storage-battery" checked>
+            			  <label for="storage-battery">Аккумуляторные</label>   
+                  </li>
+                  <li>
+            			  <input type="radio" name="power-supply" id="ac-adapter" value="ac-adapter">
+            			  <label for="ac-adapter">Сетевые</label>               	      				
+                  </li>
+                </ul>
 	      			</div>
 
 	      			<button class="btn" type="submit">Показать</button>
@@ -144,20 +158,22 @@
 	    				<li><a href="#">По цене</a></li>
 	    				<li><a href="#">По типу</a></li>
 	    				<li><a href="#">По функционалу</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
 	    			</ul>
 	    		</div>
 
 	    		<div class="catalog-product">
 				    <article class="catalog-item">
 		       	      	<img src="img/b3000.jpg" width="220" height="140" alt="Перфоратор bosch bfg 3000">
-		      	    	<h3 class="catalog-item-title">Перфоратор bosch bfg 3000</h3>
+		      	    	<h2 class="catalog-item-title">Перфоратор bosch bfg 3000</h2>
 		      	    	<span class="old-price">22 500 р.</span>
 		      	    	<a class="btn get-item" href="#">15 500 р.</a>		  
 				  	</article>	    			      		
 
 				    <article class="catalog-item">
 		       	      	<img src="img/b6000.jpg" width="220" height="140" alt="Перфоратор bosch bfg 6000">
-		      	    	<h3 class="catalog-item-title">Перфоратор bosch bfg 6000</h3>
+		      	    	<h2 class="catalog-item-title">Перфоратор bosch bfg 6000</h2>
 		      	    	<span class="old-price">30 500 р.</span>
 		      	    	<a class="btn get-item" href="#">25 500 р.</a>		  
 				  	</article>
@@ -165,27 +181,27 @@
 				    <article class="catalog-item-selected new">
 		       	      	<a class="btn buy-item" href="#">Купить</a>
 		       	      	<a class="btn bookmarks" href="#">В закладки</a>	
-		      	    	<h3 class="catalog-item-title">Перфоратор bosch bfg 2000</h3>
+		      	    	<h2 class="catalog-item-title">Перфоратор bosch bfg 2000</h2>
 		      	    	<a class="btn get-item" href="#">12 500 р.</a>		  
 				  	</article>				  	
 
 				    <article class="catalog-item">
 		       	      	<img src="img/b3000.jpg" width="220" height="140" alt="Перфоратор bosch bfg 3000">
-		      	    	<h3 class="catalog-item-title">Перфоратор bosch bfg 3000</h3>
+		      	    	<h2 class="catalog-item-title">Перфоратор bosch bfg 3000</h2>
 		      	    	<span class="old-price">22 500 р.</span>
 		      	    	<a class="btn get-item" href="#">15 500 р.</a>		  
 				  	</article>
 
 				    <article class="catalog-item new">
 		       	      	<img src="img/b6000.jpg" width="220" height="140" alt="Перфоратор bosch bfg 6000">
-		      	    	<h3 class="catalog-item-title">Перфоратор bosch bfg 6000</h3>
+		      	    	<h2 class="catalog-item-title">Перфоратор bosch bfg 6000</h2>
 		      	    	<span class="old-price">30 500 р.</span>
 		      	    	<a class="btn get-item" href="#">25 500 р.</a>		  
 				  	</article>	
 
 				    <article class="catalog-item">
 		       	      	<img src="img/b2000.jpg" width="220" height="140" alt="Перфоратор bosch bfg 2000">
-		      	    	<h3 class="catalog-item-title">Перфоратор bosch bfg 2000</h3>
+		      	    	<h2 class="catalog-item-title">Перфоратор bosch bfg 2000</h2>
 		      	    	<a class="btn get-item" href="#">12 500 р.</a>		  
 				  	</article>				  				  	
 				</div>
