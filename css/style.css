@@ -1,23 +1,184 @@
 body {
-    font-size: 14px;
-    font-family: "Cuprum", "PT Sans", Arial, sans-serif;
-    color: #000000;
-    line-height: 24px;
-    font-weight: normal;
-    background: white;
     min-width: 960px;
-    margin: 0px;    
+    margin: 0px;  
+    font-family: "Cuprum", "PT Sans", Arial, sans-serif;   
+    font-size: 14px;
+    font-weight: normal;
+    color: #000000;
+    background: white;
 }
 
 h1 {
-    font-size: 16px;
     line-height: 23px;
-    color: #ee3643;
+    font-size: 16px;
     font-style: italic;
     font-weight: lighter;
+    color: #ee3643;
 }
 
 h2 {
-    color: #32425c;
     font-size: 36px;
+    color: #32425c;
 }
+
+header {
+    background: #f1f5f7;
+    margin-bottom: 59px;
+}
+
+.main-header {
+    outline: 1px solid green; !--временно
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: 1px solid green; !--временно
+}
+
+.header-top {
+    min-height: 42px;
+    background-color: red; !--временно
+}
+
+.header-top .index-logo {
+    float:left;
+    width: 220px;
+    min-height: 42px;
+    margin-right: 10px;
+    background-color: green; !--временно
+}
+
+.header-top .search {
+    float:left;
+    width: 170px;
+    min-height: 42px;
+    background-color: yellow; !--временно
+}
+
+.header-top .shop-block {
+    float: right;
+    width: 470px;
+    min-height: 42px;
+    background-color: blue; !--временно
+}
+
+.header-top .shop-block .link {
+    float: left;
+    width: 150px;
+    min-height: 42px;
+    margin-right: 10px;
+}
+
+.header-top .shop-block .link:last-child {
+    margin-right: 0;
+}
+
+.bookmarks {}
+.cart {}
+.place-order {}
+
+.header-middle {
+    min-height: 158px;
+    background-color: purple; !--временно
+}
+
+.header-middle .site-info {
+    float: left;
+    width: 300px;
+    min-height: 158px;
+    margin-right: 20px;
+    background-color: yellow;   !--временно
+}
+
+.header-middle .contacts-header {
+    float: left;
+    width: 300px;
+    min-height: 158px;
+    margin-right: 20px;
+    background-color: yellow;   !--временно
+}
+
+.header-middle .user-block {
+    float: right;
+    width: 300px;
+    min-height: 158px;
+    background-color: yellow;   !--временно
+}
+
+nav {
+    min-height: 55px;
+    background-color: blue; !--временно
+}
+
+.promo {
+    background-color: purple;
+}
+
+.promo-top {
+    margin-bottom: 20px;
+}
+
+.category-top {
+    float: left;
+    width: 300px;
+    min-height: 123px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: green;  
+}
+
+.category-top:last-child {
+    margin-right: 0;  
+}
+
+.materials {
+}
+
+.tool {
+}
+
+.technics {
+}
+
+.category-top::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.promo-bottom {
+    margin-bottom: 53px;
+}
+
+.slider-item {
+    float: left;
+    width: 620px;
+    min-height: 266px;
+    margin-right: 20px;
+}
+
+.promo-bottom-right {
+    float: right;
+    width: 300px; 
+}
+
+.promo-bottom::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sale {
+    margin-bottom: 20px;
+    background-color: green;     
+}
+
+
+
+
+
+
+
