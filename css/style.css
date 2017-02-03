@@ -115,6 +115,7 @@ nav {
 
 .promo {
     background-color: purple;
+    min-height: 409px;
 }
 
 .promo-top {
@@ -126,13 +127,15 @@ nav {
     width: 300px;
     min-height: 123px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    
     background-color: green;  
 }
 
 .category-top:last-child {
     margin-right: 0;  
 }
+
+
 
 .materials {
 }
@@ -141,12 +144,6 @@ nav {
 }
 
 .technics {
-}
-
-.category-top::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .promo-bottom {
@@ -165,15 +162,19 @@ nav {
     width: 300px; 
 }
 
+.promo-bottom-right .sale {
+    margin-bottom: 20px;
+    background-color: green;     
+}
+
+.promo-bottom-right .delivery {
+    background-color: green;     
+}
+
 .promo-bottom::after {
     content: "";
     display: table;
     clear: both;
-}
-
-.sale {
-    margin-bottom: 20px;
-    background-color: green;     
 }
 
 
