@@ -14,20 +14,24 @@ h1 {
     font-style: italic;
     font-weight: lighter;
     color: #ee3643;
+    margin: 0px;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 30px;
     color: #32425c;
+    margin: 0px;
+    text-transform: uppercase;
 }
 
-header {
-    background: #f1f5f7;
-    margin-bottom: 59px;
+h3 {
+    margin: 0px;
 }
 
-.main-header {
-    outline: 1px solid green; !--временно
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .container {
@@ -35,12 +39,19 @@ header {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    outline: 1px solid green; !--временно
+} 
+
+header {
+    background: #f1f5f7;
+}
+
+.main-header {
+    padding-bottom: 60px;
 }
 
 .header-top {
+    background: #293449;
     min-height: 42px;
-    background-color: red; !--временно
 }
 
 .header-top .index-logo {
@@ -48,21 +59,19 @@ header {
     width: 220px;
     min-height: 42px;
     margin-right: 10px;
-    background-color: green; !--временно
+    background: #ee3643;
 }
 
 .header-top .search {
     float:left;
     width: 170px;
     min-height: 42px;
-    background-color: yellow; !--временно
 }
 
 .header-top .shop-block {
     float: right;
     width: 470px;
     min-height: 42px;
-    background-color: blue; !--временно
 }
 
 .header-top .shop-block .link {
@@ -78,11 +87,12 @@ header {
 
 .bookmarks {}
 .cart {}
-.place-order {}
+.place-order {
+    background: #63a63e;
+}
 
 .header-middle {
     min-height: 158px;
-    background-color: purple; !--временно
 }
 
 .header-middle .site-info {
@@ -90,7 +100,6 @@ header {
     width: 300px;
     min-height: 158px;
     margin-right: 20px;
-    background-color: yellow;   !--временно
 }
 
 .header-middle .contacts-header {
@@ -98,87 +107,223 @@ header {
     width: 300px;
     min-height: 158px;
     margin-right: 20px;
-    background-color: yellow;   !--временно
 }
 
 .header-middle .user-block {
     float: right;
     width: 300px;
     min-height: 158px;
-    background-color: yellow;   !--временно
+}
+
+.header-bottom {
+    background: #293449;
 }
 
 nav {
     min-height: 55px;
-    background-color: blue; !--временно
 }
 
-.promo {
-    background-color: purple;
-    min-height: 409px;
+.main-indent {
+    padding-top: 60px;
 }
 
-.promo-top {
-    margin-bottom: 20px;
+.category {
+    min-height: 408px;
+    margin-bottom: 53px;
 }
 
-.category-top {
+.category-item {
     float: left;
     width: 300px;
     min-height: 123px;
-    margin-right: 20px;
-    
-    background-color: green;  
+    margin-right: 20px;  
+    margin-bottom: 20px;
+    background: #f6b22d;  
 }
 
-.category-top:last-child {
-    margin-right: 0;  
+.category-item:nth-child(n+3) {
+    margin-right: 0;
 }
 
-
-
-.materials {
+.category-item:last-child {
+    margin-bottom: 0;
 }
 
-.tool {
+.category-blue {
+    background: #4aafde;
 }
 
-.technics {
+.category-lilac {
+    background: #cc79d1;
 }
 
-.promo-bottom {
-    margin-bottom: 53px;
+.category-green {
+    background: #85d179;
 }
 
 .slider-item {
     float: left;
     width: 620px;
-    min-height: 266px;
+    height: 266px;
     margin-right: 20px;
+    margin-bottom: 0px;
 }
 
-.promo-bottom-right {
-    float: right;
-    width: 300px; 
-}
-
-.promo-bottom-right .sale {
+.popular-product {
     margin-bottom: 20px;
-    background-color: green;     
 }
 
-.promo-bottom-right .delivery {
-    background-color: green;     
+.heading-block {
+    background: #f7f3ec;
+    min-height: 89px;
+    margin-bottom: 20px
 }
 
-.promo-bottom::after {
-    content: "";
-    display: table;
-    clear: both;
+.heading-title {
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
+.btn {
+    height: 38px;
+}
 
+.btn-red {
+    background: #ee3643;
+}
 
+.heading-block .btn {
+    width: 253px;
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 24px;  
+}
+
+.product-list {
+    float: left;
+    min-height: 318px;
+    width: 220px;
+    margin-right: 20px;
+    outline: 1px solid #e5e5e5;
+}
+
+.product-list:last-child {
+    margin-right: 0;
+}
+
+.brand-list {
+    margin-bottom: 86px;
+}
+
+.btn-brand {
+    float: left;
+    min-height: 145px;
+    width: 220px;
+    margin-right: 20px;
+    outline: 1px solid #e5e5e5;    
+}
+
+.btn-brand:nth-child(-n+4) {
+    margin-bottom: 20px;
+}
+
+.btn-brand:nth-child(4n) {
+    margin-right: 0;
+}
+
+.services-block {
+    min-height: 522px;
+    background: #f2f6f8;
+}
+
+.services-top {
+    padding-top: 68px;
+}
+
+.services-bottom {}
+
+.services-menu {
+    float: left;
+    margin-right: 60px;
+    width: 240px;
+}
+
+.services-info {
+    float:left;
+}
+
+.services-info-title {}
+
+.services-info-text {
+    width: 320px;
+}
+
+.index-content {
+    padding-top: 80px;
+    padding-bottom: 86px;
+}
+
+.index-content-right {
+    float: left;
+    margin-right: 60px;
+    width: 560px;
+}
+
+.index-content-left {
+    float: left;
+    width: 320px;
+}
+
+.main-footer {}
+
+.footer-top {
+    background: #32425c;
+}
+
+.footer-top-left {
+    float: left;
+    width: 380px;
+}
+
+.footer-top-right {
+    float: right;
+    width: 550px;
+}
+
+.footer-bottom {
+    background: #293449;
+}
+
+.footer-copyright {
+    float: left;
+    margin-right: 80px;
+    width: 300px;
+}
+
+.footer-social {
+    float: left;
+    margin-right: 80px;
+    width: 160px;    
+}
+
+.footer-info {
+    float: right;
+    width: 320px;
+}
+
+.footer-feedback {
+    float: left;
+    margin-left: 10px;
+    width:150px;
+}
+
+.footer-developer {
+    float: left;
+    margin-left: 10px;
+    width:150px;
+}
 
 
 
