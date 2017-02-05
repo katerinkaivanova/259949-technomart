@@ -4,19 +4,17 @@
 	<head>
     	<meta charset="utf-8">
     	<title>HTML Academy: Техномарт</title>
+    	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
       	<link rel="stylesheet" href="css/normalize.css">
     	<link href="css/style.css" rel="stylesheet">  	
-    	<!--
-    		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    	-->
   	</head>
   
 	<body>
     	<header class="main-header">
-		   	<div class="header-top">
+		   	<div class="header-top clearfix">
 		    	<div class="container">
-	          		<div class="index-logo"> <!-- логотип без ссылки -->
-	            		Техномарт
+	          		<div class="logo"> <!-- логотип без ссылки -->
+	            		<a class="logo-content">Техномарт</a>
 	          		</div>	
 			  
     				<form class="search" action="" method="post">
@@ -32,19 +30,23 @@
 			</div>
 			
 			<div class="container">
-				<div class="header-middle">
+				<div class="header-middle clearfix">
 				 	<div class="site-info">
-				    	Интернет-магазин строительных материалов и инструментов для ремонта
+				    	<p class="site-info-content">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
 					</div>
 				  
 					<div class="contacts-header">
-				    	<span class="phone-number">+7 (812) 555-05-55</span>
-						<b class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</b>
+				    	<div class="phone-number">+7 (812) 555-05-55</div>
+						<div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
 				  	</div>
 				  
-				  	<div class="user-block">
-			        	<a class="login" href="#">Вход</a>
-				    	<a class="check-in" href="#">Регистрация</a>		  
+				  	<div class="user-block clearfix">
+				  		<div class="sign-in-block">
+			        		<a class="login" href="#">Войти</a>
+			        	</div>
+			        	<div class="new-customer">
+				    		<a class="check-in" href="#">Регистрация</a>		  
+				    	</div>
 				  	</div>
 				</div>
 				
