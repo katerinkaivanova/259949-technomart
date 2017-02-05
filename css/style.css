@@ -1,7 +1,7 @@
 body {
     min-width: 960px;
     margin: 0px;  
-    font-family: "Cuprum", "PT Sans", Arial, sans-serif;   
+    font-family: "Cuprum", "PT Sans", "Arial", sans-serif;   
     font-size: 14px;
     font-weight: normal;
     color: #000000;
@@ -9,12 +9,13 @@ body {
 }
 
 h1 {
-    line-height: 23px;
-    font-size: 16px;
-    font-style: italic;
+    line-height: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
     font-weight: lighter;
-    color: #ee3643;
+    color: #32425c;
     margin: 0px;
+    padding: 33px 30px 35px 30px;
 }
 
 h2 {
@@ -169,7 +170,7 @@ nav {
     margin-bottom: 0px;
 }
 
-.popular-product {
+.popular-product-list {
     margin-bottom: 20px;
 }
 
@@ -201,7 +202,7 @@ nav {
     margin-right: 24px;  
 }
 
-.product-list {
+.popular-product-list .product {
     float: left;
     min-height: 318px;
     width: 220px;
@@ -209,7 +210,7 @@ nav {
     outline: 1px solid #e5e5e5;
 }
 
-.product-list:last-child {
+.popular-product-list .product:last-child {
     margin-right: 0;
 }
 
@@ -276,7 +277,8 @@ nav {
     width: 320px;
 }
 
-.main-footer {}
+.main-footer {
+}
 
 .footer-top {
     background: #32425c;
@@ -324,6 +326,95 @@ nav {
     margin-left: 10px;
     width:150px;
 }
+
+/* стили catalog.html */
+
+.header-middle .user-block-logged {
+    float: right;
+    width: 300px;
+    min-height: 158px;
+}
+
+.breadcrumbs {
+    min-height: 60px;
+}
+
+.product-group {
+    min-height: 89px;
+    background: #f2f6f8;
+    margin-bottom: 20px;
+}
+
+.column-left {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.column-left-title {
+    background: #f7f3ec;
+    min-height: 38px;
+    margin-bottom: 20px;
+}
+
+.filter {}
+
+.filter-block {}
+
+.price {
+    min-height: 162px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.brand {
+    min-height: 262px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.power-supply {
+    min-height: 200px;
+}
+
+.column-right {
+    float: left;
+    width: 700px;
+}
+
+.sort-bock {
+    background: #f7f3ec;
+}
+
+.sort-bock-title {}
+
+.product-list .product {
+    float: left;
+    min-height: 318px;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    outline: 1px solid #e5e5e5;
+}
+
+.product-list .product:nth-child(3n) {
+    margin-right: 0;
+}
+
+.pagination {
+    clear: left;
+    margin-top: 32px;
+}
+
+.main-bottom {
+    margin-top: 60px;
+    background: #f2f6f8;
+    min-height: 260px;
+}
+
+
 
 
 
