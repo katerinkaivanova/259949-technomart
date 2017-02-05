@@ -341,13 +341,14 @@ nav {
 
 .product-group {
     min-height: 89px;
+    width: 940px;
     background: #f2f6f8;
     margin-bottom: 20px;
 }
 
 .column-left {
     float: left;
-    width: 200px;
+    width: 220px;
     margin-right: 20px;
 }
 
@@ -361,21 +362,21 @@ nav {
 
 .filter-block {}
 
-.price {
+.by-price {
     min-height: 162px;
     margin-bottom: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.brand {
+.by-brand {
     min-height: 262px;
     padding-bottom: 20px;
     margin-bottom: 25px;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.power-supply {
+.by-power-supply {
     min-height: 200px;
 }
 
