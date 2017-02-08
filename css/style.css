@@ -40,14 +40,12 @@ h3 {}
     padding-right: 10px;
 } 
 
-header {
-    color: #000000;
-    background: #f1f5f7;
-}
-
 .main-header {
     padding-bottom: 60px;
     font-family: "Cuprum", "Arial", sans-serif;
+
+    color: #000000;
+    background: #f1f5f7;    
 }
 
 .header-top {
@@ -59,10 +57,8 @@ header {
 
 .logo {
     float: left;
-   
     width: 220px;
     min-height: 42px;
-    margin-right: 10px;
     
     background: #ee3643;
     box-shadow: #ca2c37 0px 5px 0px 0px;
@@ -70,6 +66,7 @@ header {
 
 .logo-content {
     display: block;
+
     padding: 12px 12px 7px 12px;
     font-size: 24px;
     line-height: 24px;
@@ -77,30 +74,36 @@ header {
     text-transform: uppercase;
 }
 
-.index-logo a {
+.logo a {
     display: block;
 }
 
-.index-logo:hover {
-    background-color: #ca2c37;
-    cursor: pointer;    
+.logo:hover {
+    background-color: #ca2c37;   
+    box-shadow: #9a212a 0px 5px 0px 0px;
 }
 
-.header-top .search {
-    float:left;
-    width: 170px;
+.logo:active {
+    background-color: #ba2732;
+    box-shadow: #8e1e26 0px 5px 0px 0px;
+}
+
+.header-top .search-block {
+    float: left;
+    position: relative;    
+    
+    width: 270px;
     min-height: 42px;
 }
 
 .header-top .shop-block {
     float: right;
-    width: 470px;
+    max-width: 450px;
     min-height: 42px;
 }
 
 .shop-block .link {
     float: left;
-    width: 150px;
     min-height: 42px;
     margin-right: 10px;
 
@@ -112,9 +115,14 @@ header {
     margin-right: 0;
 }
 
-.bookmarks {}
-.cart {}
+.bookmarks {
+    width: 140px;
+}
+.cart {
+    width: 140px;
+}
 .place-order {
+    width: 150px;
     color: #ffffff;
     background: #63a63e;
 }
@@ -521,13 +529,13 @@ user-block-logged {
 .footer-feedback {
     float: left;
     margin-left: 10px;
-    width:150px;
+    width: 150px;
 }
 
 .footer-developer {
     float: left;
     margin-left: 10px;
-    width:150px;
+    width: 150px;
 }
 
 /* стили catalog.html */
