@@ -439,9 +439,55 @@ user-block-logged {
     width: 380px;
 }
 
+.footer-logo {
+    width: 220px;
+    min-height: 63px;
+    
+    background: #ee3643;
+    box-shadow: #ca2c37 0px 5px 0px 0px;
+}
+
+.footer-logo .logo-content {
+    padding: 18px 12px 14px 12px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer-logo a {
+    display: block;
+    text-decoration: none;
+}
+
+.footer-logo:hover {
+    background-color: #ca2c37;   
+    box-shadow: #9a212a 0px 5px 0px 0px;
+}
+
+.footer-logo:active {
+    background-color: #ba2732;
+    box-shadow: #8e1e26 0px 5px 0px 0px;
+}
+
+.footer-contacts {
+    margin-top: 32px;
+    margin-left: 1px;
+    width: 327px;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
 .footer-top-right {
     float: right;
     width: 550px;
+}
+
+.footer-nav {
+    margin-top: 28px;
 }
 
 .footer-nav ul {
@@ -454,15 +500,26 @@ user-block-logged {
 
 .footer-nav li {
     display: inline-block;
+    margin-right: 59px;
 
     font-size: 18px;
     line-height: 24px;
     vertical-align: top;
 }
 
+.footer-nav li:first-child {
+    margin-left: 1px;
+}
+
+.footer-nav li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+
 .footer-nav a {
     display: block;
-    padding: 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     text-decoration: none;
     color: #ffffff;
@@ -470,6 +527,16 @@ user-block-logged {
 
 .footer-nav a:hover {
     text-decoration: underline;
+}
+
+.footer-nav a:active {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.category-menu {
+    margin-top: 13px;
+    margin-left: 25px;
 }
 
 .category-menu ul {
@@ -482,22 +549,35 @@ user-block-logged {
 
 .category-menu li {
     display: inline-block;
+    margin-right: 59px;
 
     font-size: 18px;
     line-height: 24px;
     color: #ffd180;
 }
 
+.category-menu li:last-child {
+    margin-right: 0;
+}
+
 .category-menu a {
     display: block;
-    padding: 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
+    font-size: 18px;
+    line-height: 24px;
     text-decoration: none;
     color: #f1c77c;
 }
 
 .category-menu a:hover {
     text-decoration: underline;
+}
+
+.category-menu a:active {
+    text-decoration: none;
+    opacity: 0.5;
 }
 
 .footer-bottom {
@@ -507,35 +587,107 @@ user-block-logged {
 
 .footer-copyright {
     float: left;
-    margin-right: 80px;
-    width: 300px;
+    margin-top: 20px;
+    margin-right: 160px;
+    margin-left: 1px;
+
+    width: 229px;    
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;    
 }
 
 .footer-social {
     float: left;
-    margin-right: 80px;
-    width: 160px;    
+    margin-top: 35px;
+    margin-right: 100px;
+    width: 150px;    
 }
 
 .footer-social a {
     text-decoration: none;
 }
 
+.social-btn {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: #212a3a;
+    border-radius: 50%;
+    vertical-align: middle; 
+    position: relative;
+}
+
+.social-btn-vk {
+    background: #212a3a url("../img/sprite.png") -244px -287px no-repeat;
+}
+
+.social-btn-vk:hover {
+    background: #ee3643 url("../img/sprite.png") -244px -287px no-repeat;
+}
+
+.social-btn-fb {
+    background: #212a3a url("../img/sprite.png") -134px -73px no-repeat;
+}
+
+.social-btn-fb:hover {
+    background: #ee3643 url("../img/sprite.png") -134px -73px no-repeat;
+}
+
+.social-btn-inst {
+    background: #212a3a url("../img/sprite.png") -69px -204px no-repeat;
+}
+
+.social-btn-inst:hover {
+    background: #ee3643 url("../img/sprite.png") -69px -204px no-repeat
+}
+
 .footer-info {
     float: right;
-    width: 320px;
+    margin-top: 19px;    
+    width: 300px;
+
+    font-size: 16px;
+    line-height: 18px;    
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #ffd180; 
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-info a:active {
+    text-decoration: none;
+    color: #ee3643;
 }
 
 .footer-feedback {
     float: left;
-    margin-left: 10px;
-    width: 150px;
+
+    margin-right: 20px;
+    margin-left: 1px;
+    width: 139px;
+}
+
+.footer-feedback p {
+    margin-bottom: 0;
+    color: #ffffff;  
 }
 
 .footer-developer {
     float: left;
-    margin-left: 10px;
-    width: 150px;
+    margin-right: 0;
+    margin-left: 28px;
+    width: 112px;
+}
+
+.footer-developer p {
+    margin-bottom: 0;    
+    color: #ffffff; 
 }
 
 /* стили catalog.html */
