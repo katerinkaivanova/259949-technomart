@@ -18,16 +18,22 @@
 	          		</div>	
 			  		
 			  		<div class="search-block">
-	    				<form class="formline" action="#" method="post">
+	    				<form class="formline" action="#" method="get">
 	    					<input type="search" class="input-formline" id="search" name="search" placeholder="Поиск:">
 	    					<label for="search">Поиск</label>
 	    				</form>
 			  		</div>
 
 			  		<div class="shop-block">
-			    		<a class="link bookmarks" href="#">Закладки: 0</a>
-						<a class="link cart" href="#">Корзина: 10</a>
-						<a class="link place-order" href="#">Оформить заказ</a>
+			  			<div class="bookmarks block">
+			    			<a class="link" href="#">Закладки: 0</a>
+			    		</div>
+						<div class="cart block">
+							<a class="link" href="#">Корзина: 0</a>
+						</div>
+						<div class="place-order block">
+							<a class="link" href="#">Оформить заказ</a>
+						</div>
 			  		</div>		
 			  	</div>  
 			</div>
@@ -44,9 +50,14 @@
 				  	</div>
 				  
 				  	<div class="user-block-logged">
-				  		<div class="user-id">Равшан Джамшутович</div>
-			        	<a class="user-history-orders" href="#">Мои заказы</a>
-				    	<a class="user-account" href="#">Личный кабинет</a>		  
+				  		<div class="user-id clearfix">
+				  			<a class="user-name" href="#">Равшан Джамшутович</a>
+				  			<a class="log-out" href="#"></a>
+				  		</div>
+				  		<div class="user-menu">
+				        	<a class="user-history-orders" href="#">Мои заказы</a>
+					    	<a class="user-account" href="#">Личный кабинет</a>		  
+				    	</div>
 				  	</div>
 				</div>
 			
@@ -190,7 +201,7 @@
 
 					    <article class="product selected new">
 			       	      	<a class="btn buy-item" href="#">Купить</a>
-			       	      	<a class="btn bookmarks" href="#">В закладки</a>	
+			       	      	<a class="btn bookmark" href="#">В закладки</a>	
 			      	    	<h3 class="product-title">Перфоратор bosch bfg 2000</h3>
 			      	    	<a class="btn get-item" href="#">12 500 р.</a>		  
 					  	</article>				  	
