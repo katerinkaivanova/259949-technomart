@@ -10,23 +10,6 @@ body {
     background: white;
 }
 
-h1 {
-    line-height: 30px;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: lighter;
-    color: #32425c;
-    padding: 33px 30px 35px 30px;
-}
-
-h2 {
-    font-size: 30px;
-    color: #32425c;
-    text-transform: uppercase;
-}
-
-h3 {}
-
 .clearfix::after {
     content: "";
     display: table;
@@ -42,23 +25,22 @@ h3 {}
 
 .main-header {
     padding-bottom: 60px;
-    font-family: "Cuprum", "Arial", sans-serif;
+    font-family: "Cuprum", "PT Sans", Arial, sans-serif;
 
     color: #000000;
     background: #f1f5f7;    
 }
 
 .header-top {
-    min-height: 42px;
+    height: 42px;
     color: #ffffff;
-
     background: #293449;
 }
 
 .logo {
     float: left;
     width: 220px;
-    min-height: 42px;
+    height: 42px;
     
     background: #ee3643;
     box-shadow: #ca2c37 0px 5px 0px 0px;
@@ -95,26 +77,21 @@ h3 {}
     position: relative;
 
     width: 270px;
-    min-height: 43px;
-}
-
-.formline label {
-    display: none;
+    height: 42px;
 }
 
 .input-formline {
     border: 0px;
     padding-left: 48px;
-    padding-bottom: 2px;
-
     width: 270px;
-    height: 43px;
+    height: 42px;
 
     font-family: "Cuprum";
     font-size: 17px;
-    font-weight: normal;
-    line-height: 17px;
+    line-height: 42px;
+    font-weight: 400;
    
+    color: #ffffff;
     background-color: #293449;
 }
 
@@ -134,13 +111,14 @@ h3 {}
 }
 
 .formline::before {
-    content: "";
     position: absolute;
+    content: "";
     top: 12px;
     left: 17px;
     width: 17px;
     height: 17px;    
-    background: url("../img/sprite.png") no-repeat -77px -302px;
+    background: url("../img/sprite.png");
+    background-position: -77px -302px;
     opacity: 0.3;
 }
 
@@ -161,45 +139,29 @@ h3 {}
 }
 
 .formline:hover::before {
-    content: "";
     opacity: 1;
 }
 
 .input-formline:focus {
-    position: absolute;
     color: #000000;
-}
-
-.formline .input-formline:focus {
-    background: #ffffff url("../img/icon-search-red.png") no-repeat 17px 12px;
+    background-color: #ffffff;
     outline: none;
 }
 
-.input-formline:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    opacity: 1;
-    color: #262626;
-}
-
-.input-formline:focus::-moz-placeholder { /* Firefox 19+ */
-    opacity: 1;
-    color: #262626;
-}
-
-.input-formline:focus::-ms-input-placeholder { /* IE 10+ */
-    opacity: 1;
-    color: #262626;
+.formline:focus::before {
+    /* не подключается спрайт с красным поиском */
 }
 
 .header-top .shop-block {
     float: right;
     width: 450px;
-    min-height: 42px;
+    height: 42px;
 }
 
 .shop-block .block {
     position: relative;
     float: left;
-    min-height: 42px;
+    height: 42px;
     margin-right: 0;
 
     width: 150px;
@@ -209,35 +171,28 @@ h3 {}
 
 .shop-block .place-order {
     background: #63a63e; 
-    border-bottom: 1px solid #63a63e;
 }
 
 .bookmarks .link {
     display: block;
-    padding-top: 13px;
     padding-left: 42px;
-    padding-bottom: 10px;
-
+    line-height: 42px;
     color: #ffffff;
     text-decoration: none;    
 }
 
 .cart .link {
     display: block;
-    padding-top: 13px;
     padding-left: 49px;
-    padding-bottom: 10px;
-
+    line-height: 42px;
     color: #ffffff;
     text-decoration: none;    
 }
 
 .place-order .link {
     display: block;
-    padding-top: 13px;
     padding-left: 20px;
-    padding-bottom: 10px;
-
+    line-height: 42px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -285,7 +240,6 @@ h3 {}
 
 .place-order:hover {
     background: #5fbb2d;
-    border-bottom: 1px solid #5fbb2d;
 }
 
 .bookmarks:active, .cart:active {
@@ -295,7 +249,6 @@ h3 {}
 
 .place-order:active {
     background: #518534;
-    border-bottom: 1px solid #518534;
 }
 
 .header-middle {
@@ -374,22 +327,23 @@ h3 {}
 .user-block a {
     color: #000000;
     text-decoration: none;
+
 }
 
     .sign-in-block { /* неавторизованный пользователь */
         float: left;
         position: relative;
-
         margin-top: 46px;
         margin-left: 19px;
-        padding-top: 14px;
-        padding-bottom: 16px;
 
         width: 121px;
+        height: 45px;
         background: #ffffff;
+
     }
 
     .login {
+        line-height: 45px;
         padding-left: 26px;
     }
 
@@ -409,7 +363,7 @@ h3 {}
     .login:hover::before {
         position: absolute;
         content: "";
-        top:14px;
+        top: 14px;
         left: 14px;   
         
         width: 20px;
@@ -442,11 +396,15 @@ h3 {}
 
     .new-customer {
         float: right;
-        margin-top: 46px;
-        padding-top: 14px;
-        padding-bottom: 16px;
-        width: 150px;
         background: #ffffff;
+        margin-top: 46px;
+        width: 150px;
+        height: 45px;
+        background: #ffffff;
+    }
+
+    .check-in {
+        line-height: 45px;
     }
 
     .check-in:hover {
@@ -611,31 +569,28 @@ h3 {}
     box-shadow: #293449 0px 5px 0px 0px;
 }
 
-.main-navigation {
-    min-height: 55px;
-}
-
 .main-navigation ul {
-    margin: 0;
+    display: table;
     padding: 0;
-
+    margin: 0 auto;
     list-style: none;
     font-size: 0;
+    width: 100%;
 }
 
 .main-navigation li {
-    display: inline-block;
-
+    display: table-cell;
+    vertical-align: middle;
     font-size: 17px;
     line-height: 17px;
-    vertical-align: top;
 }
 
 .main-navigation a {
     display: block;
-    padding: 20px 30px;
-    padding-bottom: 19px;
+    padding: 20px 10px;
+    padding-bottom: 18px;
     color: #ffffff;
+    text-align: center;
     text-decoration: none;    
 }
 
@@ -687,6 +642,91 @@ h3 {}
     background: #85d179;
 }
 
+.category-item h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.category-content {
+    position: relative;
+    padding-right: 140px; 
+}
+
+.bucket::after {
+    position: absolute;
+    content:"";
+
+    top: 10px;
+    left: 211px;
+    width: 44px;
+    height: 65px;
+
+    background: url("../img/category-bucket.png") no-repeat;
+    background-position: 0;
+}
+
+.drill::after {
+    position: absolute;
+    content:"";
+
+    top: 10px;
+    left: 196px;
+    width: 75px;
+    height: 61px;
+
+    background: url("../img/category-drill.png") no-repeat;
+    background-position: 0;
+}
+
+.tractor::after {
+    position: absolute;
+    content:"";
+
+    top: 10px;
+    left: 191px;
+    width: 78px;
+    height: 62px;
+
+    background: url("../img/category-traсtor.png") no-repeat;
+    background-position: 0;    
+}
+
+.pushcart::after {
+    position: absolute;
+    content:"";
+
+    top: 10px;
+    left: 196px;
+    width: 59px;
+    height: 72px;
+
+    background: url("../img/category-cart.png") no-repeat;
+    background-position: 0;   
+}
+
+.truck::after {
+    position: absolute;
+    content:"";
+
+    top: 10px;
+    left: 191px;
+    width: 78px;
+    height: 63px;
+
+    background: url("../img/category-car.png") no-repeat;
+    background-position: 0;       
+}
+
+.category-item .category-title {
+    padding-left: 23px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: white;
+}
+
 .slider-item {
     float: left;
     width: 620px;
@@ -709,34 +749,151 @@ h3 {}
     float: left;
     margin-top: 30px;
     margin-left: 30px;
+    font-family: "Cuprum";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425c;
 }
+
+/* кнопки*/
 
 .btn {
     height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.btn-gray {
+    background: #e5e5e5;
+}
+
+.btn-gray:hover {
+    background: #cccccc;
+}
+
+.btn-gray:active {
+    background: #b2b2b2;
 }
 
 .btn-red {
     background: #ee3643;
 }
 
+.btn-red:hover {
+    background: #ca2c37;
+}
+
+.btn-red:active {
+    background: #ba2732;   
+}
+
+.category-item .btn {
+    display: block;
+    margin-left: 25px;
+    width: 136px;
+    color: #ffffff;
+}
+
 .heading-block .btn {
-    width: 253px;
     float: right;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-right: 24px;  
+    width: 253px;
 }
 
-.popular-product-list .product {
+.product-item .btn {
+    display: block;
+    margin-left: 43px;
+    width: 123px;
+    font-size: 17px;
+    font-family: "PT Sans";
+    color:#ffffff;
+    border-radius: 2px;
+}
+
+.product-item .btn::after {
+    position: absolute;
+    content: "";
+    right: 18px;
+    border: 19px solid transparent; 
+    border-left: 18px solid #ee3643;
+}
+
+/*
+.product-item .btn-red:hover::after {
+    border: 19px solid transparent; 
+    border-left: 18px solid #ca2c37;
+}
+
+.product-item .btn-red:active::after {
+    border: 19px solid transparent; 
+    border-left: 18px solid #ba2732;
+}
+*/
+
+.popular-product-list .product-item {
     float: left;
+    margin-right: 20px;
     min-height: 318px;
     width: 220px;
-    margin-right: 20px;
     outline: 1px solid #e5e5e5;
 }
 
-.popular-product-list .product:last-child {
+.popular-product-list .product-item:last-child {
     margin-right: 0;
+}
+
+.product-item .item-pic {
+    margin-bottom: 7px;
+}
+
+.product-item-content {
+    position: relative;
+}
+
+.product-item-content h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.product-item-content .product-title {
+    padding: 0 auto;
+    margin-bottom: 11px;
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.product-item-content .old-price {
+    display: block;
+    padding: 0 auto;
+    margin-bottom: 10px;
+    font-family: "PT Sans";
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-align: center;
+    color: #999999;
+}
+
+.product-item-content .no-old-price {
+    text-decoration: none;
+}
+
+.product-item:hover {
+    box-shadow: 0 0 10px rgba(41,52,73,0.5);
 }
 
 .brand-list {
@@ -784,7 +941,7 @@ h3 {}
 }
 
 .services-info {
-    float:left;
+    float: left;
 }
 
 .services-info-title {}
@@ -798,13 +955,14 @@ h3 {}
     padding-bottom: 86px;
 }
 
-.index-content-right {
+.index-content-left {
     float: left;
     margin-right: 60px;
     width: 560px;
 }
 
-.index-content-left {
+
+.index-content-right {
     float: left;
     width: 320px;
 }
