@@ -728,11 +728,131 @@ body {
 }
 
 .slider-item {
+    position: relative;
     float: left;
     width: 620px;
     height: 266px;
     margin-right: 20px;
     margin-bottom: 0px;
+}
+
+.first-slide {
+    position: relative;
+}
+
+.slider-item img {
+    width: 620px;
+    height: 266px;
+}
+
+.first-slide h3, .first-slide p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.first-slide h3 {
+    position: absolute;
+    top: 22px;
+    left: 25px;     
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.first-slide p {
+    position: absolute;
+    top: 59px;
+    left: 25px; 
+    font-family: PT Sans;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.second-slide {
+    display: none;
+    position: relative;
+}
+
+.second-slide  h3, .first-slide p {
+    margin: 0;
+    padding: 0;
+}
+
+.second-slide h3 {
+    position: absolute;
+    top: 22px;
+    left: 25px;     
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.second-slide p {
+    position: absolute;
+    top: 59px;
+    left: 25px; 
+    font-family: PT Sans;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.slider-previous {
+    position: absolute;
+    top: 112px;
+    left: 27px;
+    width: 22px;
+    height: 42px;
+    background: url("../img/sprite.png");
+    background-position: -200px -135px;
+    cursor: pointer;
+    border: none;
+}
+
+.slider-next {
+    position: absolute;
+    top: 112px;
+    right: 21px;
+    width: 22px;
+    height: 42px;
+    background: url("../img/sprite.png");
+    background-position: -20px -215px;
+    cursor: pointer;
+    border: none;   
+}
+.slider-item .btn {
+    position: absolute;
+    left: 27px;
+    bottom: 25px;   
+    width: 190px;                                                            /* <----- ПРОВЕРИТЬ ШИРИНУ КНОПКИ*/
+}
+
+.slider-item .btn-red:hover {
+  background-color: #ca2c37;
+}
+
+.slider-item .btn-red:active {
+  background-color: #ba2732;
+}
+
+.switch {
+  position: absolute;
+  top: 220px;
+  left: 315px;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.switch-active {
+  left: 295px;
+  background: #ee3643;
 }
 
 .popular-product-list {
@@ -784,14 +904,6 @@ body {
     background: #ee3643;
 }
 
-.btn-red:hover {
-    background: #ca2c37;
-}
-
-.btn-red:active {
-    background: #ba2732;   
-}
-
 .category-item .btn {
     display: block;
     margin-left: 25px;
@@ -805,6 +917,14 @@ body {
     margin-bottom: 25px;
     margin-right: 24px;  
     width: 253px;
+}
+
+.heading-block .btn-red:hover {
+    background: #ca2c37;
+}
+
+.heading-block .btn-red:active {
+    background: #ba2732;   
 }
 
 .product-item-content .btn {
@@ -981,7 +1101,6 @@ body {
 
 .product-item:hover {
     box-shadow: 0 10px 25px rgba(41,52,73,0.5);
-    opacity: 0.3;
 }
 
 .brand-list {
@@ -1024,32 +1143,130 @@ body {
 }
 
 .services-top {
-    padding-top: 68px;
+    padding-top: 65px;
+}
+
+.services-top h2, .services-top p {
+    margin: 0;
+    padding: 0;
+}
+
+.services-top .services-title {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000; 
+    text-transform: uppercase;
+}
+
+.services-top p {
+    margin: 0;
+    margin-bottom: 69px;
+    width: 410px;   
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
 }
 
 .services-bottom {}
 
-.services-bottom ul {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.services-menu {
+.services-tabs {
     float: left;
-    margin-right: 60px;
+    margin-right: 80px;
+    height: 182px;
     width: 240px;
 }
 
-.services-info {
-    float: left;
+.services-tabs .tab {
+    display: block;
+    padding: 20px 22px 22px;                            /*ПОСМОТРЕТЬ LINE-HEIGHT, ИЗМЕНИТЬ PADDING*/
+    font-size: 22px;
+    color: #ffffff;
+    background: #32425c;
+    border-top: 1px solid #405069;      
+    border-bottom: 1px solid #293449;
+    text-decoration: none;
 }
 
-.services-info-title {}
+.services-tabs .tab:hover {
+  background-color: #293449;
+}
 
-.services-info-text {
+.services-tabs .tab-active  {
+    padding: 21px 22px 23px;                            /*ПОСМОТРЕТЬ LINE-HEIGHT, ИЗМЕНИТЬ PADDING*/
+    color: #32425c;
+    background: #ffffff;    
+    border: none;
+}
+
+.services-tabs .tab-active:hover  {
+    background: #ffffff;    
+}
+
+.tab-content {
+    float: left;
+    position: relative;
+    width: 300px;   
+}
+
+.delivery-service::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: 150px;    
+    width: 470px;
+    height: 263px;
+    background: url("../img/blue-car.png") no-repeat;
+}
+
+.guarantee-service::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: 150px;    
+    width: 470px;
+    height: 263px;
+    background: url("../img/warranty.png") no-repeat;
+}
+
+.credit-service::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: 150px;    
+    width: 470px;
+    height: 263px;
+    background: url("../img/credit.png") no-repeat;
+}
+
+.tab-content .tab-content-title {
+  color: #32425c;
+  margin-top: 0;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.tab-content .tab-content-text {
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.tab-content-title {}
+
+.tab-content-text {
     width: 320px;
+}
+
+.services-bottom .guarantee-service {
+    display: none;
+}
+
+.services-bottom .credit-service {
+    display: none;
 }
 
 .index-content {
@@ -1468,9 +1685,3 @@ body {
     background: #f2f6f8;
     min-height: 260px;
 }
-
-
-
-
-
-
