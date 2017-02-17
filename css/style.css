@@ -1241,11 +1241,14 @@ body {
     background: url("../img/credit.png") no-repeat;
 }
 
-.tab-content .tab-content-title {
-  color: #32425c;
-  margin-top: 0;
-  font-size: 36px;
-  line-height: 36px;
+.tab-content .tab-content-title {                   
+    margin-top: 0;
+    font-family: "Cuprum";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #32425c;
+    text-transform: uppercase;
 }
 
 .tab-content .tab-content-text {
@@ -1253,6 +1256,7 @@ body {
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
+    text-transform: none;
 }
 
 .tab-content-title {}
