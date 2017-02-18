@@ -20,6 +20,7 @@
 			  		<div class="search-block">
 	    				<form class="formline" action="#" method="get">
 	    					<input type="search" class="input-formline" id="search" name="search" placeholder="Поиск:">
+	    					<label for="search" class="search-label"></label>
 	    				</form>
 			  		</div>
 			  
@@ -299,34 +300,30 @@
 			
 			<div class="container">
 				<div class="index-content clearfix">
-				  	<div class="index-content-left">
-				    	<h2 class="index-content-title">Компания «техномарт»</h2>
-						<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-						<p>
-							Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-							Техномарт работает со многими транспортными компаниями:
-						</p>
-						
-						<ul class="carrier-service">
-					  		<li>Деловые линии</li>
-					  		<li>Автотрейдинг</li>
-					  		<li>ЖелДорЭкспедиция</li>
-						</ul>
-						
-						<a class="btn btn-red" href="#">Подробнее о компании</a>	
-				  	</div>
-				  
-				  	<div class="index-content-right">
-				    	<h2 class="index-content-title">Контакты</h2>
+			        <div class="left-column">
+			          	<h2>Компания «Техномарт»</h2>
+			          	<p>
+			          		Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+			          	</p>
+			          	<p>
+			          		Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаними:
+			           	</p>
+			          	<ul class="dashed-list">
+			            	<li>Деловые линии</li>
+			            	<li>Автотрейдинг</li>
+			            	<li>ЖелДорЭкспедиция</li>
+			          	</ul>
+			          	<a href="#" class="btn btn-red">Подробнее о компании</a>
+			        </div>
 
-						<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-
-						<div class="map">
-					  		<img src="img/map.png" alt="Как проехать" width="" height="">
-						</div>
-
-						<a class="btn btn-red" href="#">Заблудились? Напишите нам!</a>	
-				  	</div>		  
+			        <div class="right-column">
+			          	<h2>Контакты</h2>
+			          	<p>Вы можете забрать товар сами, заехав в наш офис:</p>
+			          	<a href="#" class="map">
+			            	<img src="img/map.png" width="300" height="158" alt="Адрес: Большая Конюшенная ул., 19">
+			          	</a>
+			          	<a href="#" class="btn btn-red">Заблудились? Напишите нам!</a>
+			        </div>		  
 				</div>
 			</div>
 		</main>  
@@ -413,6 +410,48 @@
 			        </div>
 		   		</div>  
 			</div>      
-  		</footer>		
+  		</footer>
+
+    	<div class="popup-write-us">
+      		<button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+      		
+      		<form action="echo/htmlacademy.ru" method="post" class="write-us clearfix">
+	        	<div class="write-us-fields">
+	          		<div class="form-left-column">
+	            		<label for="name">Ваше имя:</label>
+	            		<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+	          		</div>
+	          		
+	          		<div class="form-right-column">
+	            		<label for="email">Ваш e-mail:</label>
+	            		<input type="text" id="email" name="email" placeholder="Для отправки ответа">
+	          		</div>
+	      			
+	      			<label for="text">Текст письма:</label>
+	      			<textarea id="text" name="question">В свободной форме</textarea>
+	        	</div>
+
+	        	<div class=" btn popup-background">
+	          		<input type="submit" value="Отправить">
+	        	</div>
+      		</form>
+    	</div>
+
+    	<div class="popup-map">
+      		<button class="popup-close">Закрыть</button>
+      		<iframe  class="map-link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616327244!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487181106313" width="940" height="446" style="border:0" allowfullscreen></iframe>
+    	</div>
+
+    	<div class="popup-cart">
+      		<button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+      		<h2> Товар добавлен в корзину!</h2>
+      		<div class="popup-background">
+        		<a href="#" class="btn"> Оформить заказ </a>
+        		<a href="#" class="continue btn">Продолжить покупки</a>
+      		</div>
+    	</div>  
+
+    	<script src="js/script.js"></script>
+
 	</body>
 </html>
