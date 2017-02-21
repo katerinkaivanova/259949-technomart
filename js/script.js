@@ -1,5 +1,5 @@
 var popup = document.querySelector(".popup-write-us");
-if(popup) {
+if (popup) {
   var feedback = document.querySelector(".right-column .btn");
   var close = popup.querySelector(".popup-close");
   var form = popup.querySelector("form");
@@ -38,7 +38,7 @@ var cartPopup = document.querySelector(".popup-cart");
 var cartClose = cartPopup.querySelector(".popup-close");
 var cartContinue = cartPopup.querySelector(".continue");
 
-for(var i=0;i<cart.length;i++) {
+for (var i = 0; i < cart.length; i++) {
   cart[i].addEventListener("click", function(event) {
     event.preventDefault();
     cartPopup.classList.add("popup-cart-show");
@@ -64,7 +64,7 @@ cartContinue.addEventListener("click", function(event) {
 });
 
 var map = document.querySelector(".map");
-if(map) {
+if (map) {
   var mapPopup = document.querySelector(".popup-map");
   var mapClose = mapPopup.querySelector(".popup-close");
 
